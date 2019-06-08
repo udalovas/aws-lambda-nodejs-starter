@@ -1,0 +1,15 @@
+# Intellig
+.idea
+
+# Node
+node_modules
+target
+
+# Visual Studio Code
+.vscode
+
+# AWS SAM
+.aws-sam
+
+# Mac OS
+.DS_Store
