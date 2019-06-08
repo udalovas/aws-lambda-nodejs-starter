@@ -9,7 +9,7 @@ An easy to start with & follow, though powerful enough starter for your AWS Lamb
 - Proper structure, familiar to all nodejs people
 - Checkstyle setup
 - Unit tests setup
-- AWS SAM based setup
+- [AWS SAM](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/what-is-sam.html) based setup
 - Packaging into a read-to-upload artefact
 
 ## Preresquites
@@ -27,7 +27,7 @@ You will need the following to be installed in order to ~~build any lambda in No
 npm install
 ```
 ### Invoke
-... your lambda locally with the support of [AWS SAM](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/what-is-sam.html):
+... your lambda locally with the support of AWS SAM:
 ```
 npm run invoke:local
 ```
@@ -52,7 +52,7 @@ npm test
 which runs tests using [MochaJS](https://mochajs.org/) and [ChaiJS](https://www.chaijs.com/).
 
 ### Build
-... a package for [AWS SAM](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/what-is-sam.html)-based flow:
+... a package for AWS SAM:
 ```
 npm run build:sam
 ```
