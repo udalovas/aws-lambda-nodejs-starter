@@ -10,7 +10,7 @@ An easy to start with & follow, though powerful enough starter for your AWS Lamb
 - Checkstyle setup
 - Unit tests setup
 - [AWS SAM](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/what-is-sam.html) based setup
-- Packaging into a read-to-upload artefact
+- Packaging into a ready-to-upload artefact
 
 ## Preresquites
 You will need the following to be installed in order to ~~build any lambda in Node.js~~ try and extend this starter:
