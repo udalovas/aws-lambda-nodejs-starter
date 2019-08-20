@@ -55,7 +55,7 @@ which runs tests using [MochaJS](https://mochajs.org/) and [ChaiJS](https://www.
 ```
 npm run test:coverage
 ```
-which generated a report using [Istanbul](https://istanbul.js.org/)
+which generates a report using [Istanbul](https://istanbul.js.org/)
 
 ### Build
 ... a package for AWS SAM:
