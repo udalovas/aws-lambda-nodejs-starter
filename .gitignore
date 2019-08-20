@@ -13,3 +13,7 @@ target
 
 # Mac OS
 .DS_Store
+
+# Tests coverage
+.nyc_output
+coverage

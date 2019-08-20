@@ -51,6 +51,12 @@ npm test
 ```
 which runs tests using [MochaJS](https://mochajs.org/) and [ChaiJS](https://www.chaijs.com/).
 
+### Check Test(s) Coverage
+```
+npm run test:coverage
+```
+which generated a report using [Istanbul](https://istanbul.js.org/)
+
 ### Build
 ... a package for AWS SAM:
 ```
@@ -74,5 +80,4 @@ This module is one big extension point, specificly to
 ## Roadmap
 - Env. specific config baseline setup
 - Deployment script baseline setup
-- Tests coverage report
 - Baseline support for integration with Dynamo, S3.. anything else suggested by the users..
