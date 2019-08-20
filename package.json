@@ -2,29 +2,40 @@
   "name": "awslambda-nodejs-starter",
   "version": "1.0.0",
   "description": "A starter for an AWS Lambda built with Node.js, prepared with care, love and industry best practices",
-  "main": "src/app.js",
+  "main": "index.js",
   "scripts": {
-    "checkstyle": "eslint src test | snazzy",
-    "checkstyle:fix": "eslint src test --fix",
-    "test": "mocha test/**/**.spec.js",
-    "build:sam": "sam build --template sam/template.yml",
-    "build:zip": "lambda-zipper build -f src -o target/app.zip",
-    "invoke:local": "cd sam && sam local invoke -t template.yml -e sample-event.json ",
+    "checkstyle": "eslint lib test | snazzy",
+    "checkstyle:fix": "eslint lib test --fix",
+    "test": "mocha --recursive test",
+    "build:sam": "sam build --template sam/template.yaml",
+    "build:zip": "lambda-zipper build -f lib -o target/app.zip",
+    "invoke:local": "cd sam && sam local invoke -t template.yaml -e sample-event.json --region us-east-1",
     "preinvoke:local": "npm run build:sam",
-    "pretest": "npm run checkstyle",
-    "prebuild:sam": "npm run test",
-    "prebuild:zip": "npm run test"
+    "prebuild:zip": "npm run test",
+    "test:coverage": "nyc --check-coverage --lines 80 --report-dir --reporter=html npm run test"
   },
   "repository": {
     "type": "git",
     "url": "TBD"
   },
   "devDependencies": {
+    "aws-sdk": "^2.466.0",
     "chai": "^4.2.0",
     "eslint": "^5.16.0",
+    "lambda-zipper": "0.4.1",
+    "nyc": "^14.1.1",
     "mocha": "^6.1.4",
-    "snazzy": "^8.0.0",
-    "lambda-zipper": "0.4.1"
+    "sinon": "^7.3.2",
+    "snazzy": "^8.0.0"
+  },
+  "nyc": {
+    "all": true,
+    "include": [
+      "lib/**"
+    ]
+  },
+  "engines": {
+    "node": ">=8.10"
   },
   "author": "udalovas",
   "license": "ISC"

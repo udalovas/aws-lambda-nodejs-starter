@@ -1,7 +1,7 @@
 'use strict';
 
-const expect = require('chai').expect;
-const handler = require('../src/app').handler;
+const { expect } = require('chai');
+const handler = require('../lib/handler');
 
 describe('Nodejs Starter Lambda', () => {
     it('should provide status on any event', async () => {
