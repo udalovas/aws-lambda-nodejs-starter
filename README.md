@@ -3,6 +3,8 @@ aws-lambda-nodejs-starter
 
 An easy to start with & follow, though powerful enough starter for your AWS Lambda built with Node.js (good choice btw), prepared with care, love and industry best practices.
 
+[![Build Status](https://travis-ci.org/udalovas/aws-lambda-nodejs-starter.svg?branch=master)](https://travis-ci.org/udalovas/aws-lambda-nodejs-starter)
+
 ## Includes
 ... from the moment one:
 
