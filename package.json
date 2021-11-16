@@ -19,7 +19,7 @@
     "url": "TBD"
   },
   "devDependencies": {
-    "aws-sdk": "^2.466.0",
+    "aws-sdk": "^2.814.0",
     "chai": "^4.2.0",
     "eslint": "^5.16.0",
     "lambda-zipper": "0.4.1",
